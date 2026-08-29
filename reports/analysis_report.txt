@@ -1,0 +1,63 @@
+STUDENT PERFORMANCE ANALYTICS REPORT
+==================================================
+
+===== EXECUTIVE SUMMARY =====
+
+Total Students: 200
+Complete Students: 200
+Incomplete Students: 0
+Passed Students: 197
+Failed Students: 3
+Pass Rate: 98.50%
+Overall Average: 64.99
+
+===== TOP STUDENT =====
+
+Name: Aditya
+Student ID: S124
+Department: ME
+Average: 93.67
+Total Marks: 281
+
+===== BEST DEPARTMENT =====
+
+Department: ME
+Average Performance: 67.47
+
+===== DEPARTMENT AVERAGES =====
+
+ME: 67.47
+CSE: 65.29
+IT: 65.24
+CE: 64.81
+ECE: 60.67
+
+===== CORRELATION ANALYSIS =====
+
+Attendance vs Performance: 0.23
+Study Hours vs Performance: 0.59
+Stronger Relationship: Study Hours
+
+===== GRADE DISTRIBUTION =====
+
+A+: 5
+A: 16
+B: 52
+C: 63
+D: 38
+F: 26
+
+===== RISK ANALYSIS =====
+
+Low Risk: 170
+Medium Risk: 11
+High Risk: 19
+At-Risk Students: 30
+At-Risk Percentage: 15.00%
+
+===== KEY INSIGHTS =====
+
+1. ME has the highest average departmental performance (67.47).
+2. Study Hours has the stronger correlation with student performance.
+3. 30 students are classified as medium or high risk.
+4. 0 students have incomplete academic records.

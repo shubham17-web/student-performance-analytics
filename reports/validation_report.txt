@@ -1,0 +1,11 @@
+DATA QUALITY VALIDATION REPORT
+=============================================
+
+Total Rows: 200
+Duplicate Student IDs: 0
+Total Missing Values: 0
+Invalid Marks: 0
+Invalid Attendance: 0
+Invalid Ages: 0
+
+Validation Status: PASSED
