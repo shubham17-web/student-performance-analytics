@@ -1,80 +1,125 @@
-# Student Performance Analytics
+# 📊 Student Performance Analytics
 
-A Python-based student performance analytics project built using Pandas, NumPy, Matplotlib, and Seaborn.
+An end-to-end student performance analytics project built with
+Python, Pandas, NumPy, Matplotlib, Seaborn, and Streamlit.
 
-## Project Overview
+The project analyzes academic performance, identifies at-risk
+students, studies relationships between academic factors, and
+provides an interactive dashboard for exploring the results.
 
-This project analyzes student academic and behavioral data to identify performance patterns, department-level trends, and students who may be at academic risk.
+---
 
-The project includes data validation, performance analysis, risk detection, statistical analysis, visualization, and automated report generation.
+## 🚀 Features
 
-## Features
+### 📊 Performance Analysis
 
-- Data validation
-- Missing-value detection
-- Duplicate Student ID detection
-- Marks validation
-- Attendance validation
-- Student performance calculation
-- Grade classification
-- Student ranking
-- Subject-wise analysis
-- Department performance analysis
-- At-risk student detection
-- Risk scoring
-- Risk-level classification
-- Correlation analysis
-- Data visualization
-- Automated analysis reports
-- Data quality reports
+- Calculate total marks and average marks
+- Identify top-performing students
+- Analyze subject-wise performance
+- Calculate department-level performance
+- Generate student rankings
 
-## Technologies Used
+### ⚠️ Student Risk Detection
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+The project identifies students who may require additional
+academic attention using multiple factors:
 
-## Dataset
+- Low average marks
+- Low attendance
+- Low study hours
+- Low previous score
 
-The dataset contains 200 student records with information including:
+Each student receives:
 
-- Student ID
-- Name
-- Age
-- Department
-- Math marks
-- Science marks
-- English marks
-- Attendance
-- Study hours
-- Assignments completed
-- Previous score
+- Risk Score
+- Risk Level
+- Risk Reason
 
-## Project Structure
+Risk levels:
+
+- LOW
+- MEDIUM
+- HIGH
+
+### 📈 Statistical Analysis
+
+The project analyzes relationships between:
+
+- Attendance and performance
+- Study hours and performance
+- Previous score and performance
+- Subject marks
+- Other numerical student factors
+
+Correlation analysis and a correlation heatmap are generated
+to understand these relationships.
+
+### 📊 Data Visualization
+
+The project generates:
+
+- Department performance chart
+- Attendance vs performance chart
+- Study hours vs performance chart
+- Correlation heatmap
+- Grade distribution chart
+- Risk distribution chart
+
+### 🖥️ Interactive Streamlit Dashboard
+
+The dashboard provides:
+
+- Department filtering
+- Student selection
+- KPI metrics
+- Individual student profiles
+- Subject performance charts
+- Risk analysis
+- Automated insights
+- Interactive student data table
+
+---
+
+## 🗂️ Project Structure
 
 ```text
 student-performance-project/
 │
 ├── data/
 │   ├── raw/
-│   └── processed/
+│   │   └── students_raw.csv
+│   │
+│   ├── processed/
+│   │   └── students_cleaned.csv
+│   │
+│   └── students.csv
+│
+├── reports/
+│   ├── figures/
+│   │   ├── attendance_vs_performance.png
+│   │   ├── correlation_heatmap.png
+│   │   ├── department_performance.png
+│   │   ├── grade_distribution.png
+│   │   ├── risk_distribution.png
+│   │   └── study_hours_vs_performance.png
+│   │
+│   ├── analysis_report.txt
+│   ├── at_risk_students.csv
+│   ├── complete_student_risk_analysis.csv
+│   └── validation_report.txt
 │
 ├── src/
 │   ├── __init__.py
 │   ├── analysis.py
+│   ├── config.py
 │   ├── risk_analysis.py
-│   ├── validation.py
-│   └── config.py
+│   └── validation.py
 │
-├── reports/
-│   ├── figures/
-│   ├── analysis_report.txt
-│   ├── validation_report.txt
-│   ├── at_risk_students.csv
-│   └── complete_student_risk_analysis.csv
+├── dashboard/
+│   └── app.py
 │
+├── generate_data.py
+├── clean_data.py
 ├── main.py
 ├── visualization.py
 ├── requirements.txt
