@@ -80,6 +80,36 @@ The dashboard provides:
 
 ---
 
+## 📊 Power BI Dashboard
+
+The project also includes an interactive Power BI dashboard for deeper
+student performance and risk analysis.
+
+### Power BI Features
+
+- Student performance KPIs
+- Average score and pass percentage
+- Top student identification
+- Department performance analysis
+- Grade distribution
+- Risk-level analysis
+- High-risk student identification
+- Risk factor analysis
+- Student performance details
+- Interactive slicers and filters
+- Performance Analysis page
+- Risk Analysis page
+
+### Power BI Report Pages
+
+- **Overview Dashboard** — overall student performance and key metrics
+- **Performance Analysis** — department, grade, and individual student analysis
+- **Risk Analysis** — at-risk students, high-risk students, and risk factors
+
+📁 **Power BI File:** [Student Performance Analytics](powerbi/Student_Performance_Analytics.pbix)
+
+---
+
 ## 🗂️ Project Structure
 
 ```text
@@ -87,22 +117,11 @@ student-performance-project/
 │
 ├── data/
 │   ├── raw/
-│   │   └── students_raw.csv
-│   │
 │   ├── processed/
-│   │   └── students_cleaned.csv
-│   │
 │   └── students.csv
 │
 ├── reports/
 │   ├── figures/
-│   │   ├── attendance_vs_performance.png
-│   │   ├── correlation_heatmap.png
-│   │   ├── department_performance.png
-│   │   ├── grade_distribution.png
-│   │   ├── risk_distribution.png
-│   │   └── study_hours_vs_performance.png
-│   │
 │   ├── analysis_report.txt
 │   ├── at_risk_students.csv
 │   ├── complete_student_risk_analysis.csv
@@ -117,6 +136,9 @@ student-performance-project/
 │
 ├── dashboard/
 │   └── app.py
+│
+├── powerbi/                         ← NEW
+│   └── Student_Performance_Analytics.pbix
 │
 ├── generate_data.py
 ├── clean_data.py
